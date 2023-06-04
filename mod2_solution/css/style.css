@@ -7,7 +7,7 @@
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 100vh;;
 }
 
 .container > h1{
@@ -21,14 +21,14 @@
     gap: 20px;
 }
 .box-container > .card{
-    border: 1px thick black;
+    margin: 50px 20px;
+    border: 1px solid black;
     position: relative;
 }
 .box-container > .card > div{
     position: absolute;
-    float: left;
     top: 0;
-    left: 0;
+    right: 0;
 }
 .box-container > .card > div > h2{
     padding: 5px 15px;
