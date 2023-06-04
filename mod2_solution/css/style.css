@@ -42,15 +42,15 @@
     text-align: center;
     border: 1px solid black;
 }
-.box-container > .card1 > div > h2{
+.box-container > .card:nth-child(1) > div > h2{
     background-color: brown;
     color: white;
 }
-.box-container > .card2 > div > h2{
+.box-container > .card:nth-child(2) > div > h2{
     background-color: orange;
     color: white;
 }
-.box-container > .card3 > div > h2{
+.box-container > .card:nth-child(3) > div > h2{
     background-color: pink;
     color: black;
 }
@@ -69,13 +69,30 @@
 
 /* Tab view*/
 @media (min-width:768px) and (max-width:991px) {
-    
+    .box-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;       
+    }
+    .box-container > .card:nth-child(1){
+        flex-basis: 47%;
+    }.box-container > .card:nth-child(2){
+        flex-basis: 47%;
+    } 
+    .box-container > .card:nth-child(3){
+        flex-basis: 100%;
+    }
 
 }
 
 
 /* Mobile view*/
-@media (min-width: 992px){
-    
-
+@media (max-width: 767px){
+    .box-container{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
